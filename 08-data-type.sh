@@ -6,4 +6,4 @@ echo "the sum is:$SUM"
 
 # ARRAY OF LIST
 FRUIT=("anand" "chandu" "sneha")
-echo" fruits are:${FRUIT[@]}"
+echo "fruits are:${FRUIT[@]}"
