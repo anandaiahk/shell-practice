@@ -21,11 +21,11 @@ VALIDATE()
 
 for package in $@  # to inupt nginx mysql nodejs
 do
-   dnf installed $package &>>$LOGS_FILE
+   dnf list installed $package &>>$LOGS_FILE
 
    if [ $? -ne 0 ]; then
          
-        echo "$package no installed,install now"
+    echo "$package no installed,install now"
     dnf install $package -y &>>$LOGS_FILE
      VALIDATE $? "install $package"
      else
