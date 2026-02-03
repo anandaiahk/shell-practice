@@ -35,7 +35,7 @@ do
          
     echo -e "$package $R no installed,install now $N"
     dnf install $package -y &>>$LOGS_FILE
-    # VALIDATE $? "install $package"
+    VALIDATE $? "install $package"
      else
      echo -e "$package already installed....$Y skipping $N"
      fi
