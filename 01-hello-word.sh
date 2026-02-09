@@ -1,2 +1,2 @@
 #!/bin/bash
-echo "this is word"
+echo "this is shell scripting"
